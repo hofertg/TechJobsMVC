@@ -10,7 +10,7 @@ namespace TechJobs.Models
         static List<Dictionary<string, string>> AllJobs = new List<Dictionary<string, string>>();
         static bool IsDataLoaded = false;
 
-        public static List<Dictionary<string, string>> FindAll()
+        public static List<Dictionary<string, string>> FindByColumnAndValue()
         {
             LoadData();
 

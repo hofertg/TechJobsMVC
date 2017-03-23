@@ -31,7 +31,7 @@ namespace TechJobs.Controllers
         {
             if (column.Equals("all"))
             {
-                List<Dictionary<string, string>> jobs = JobData.FindAll();
+                List<Dictionary<string, string>> jobs = JobData.FindByColumnAndValue();
                 ViewBag.title =  "All Jobs";
                 ViewBag.jobs = jobs;
                 return View("Jobs");
